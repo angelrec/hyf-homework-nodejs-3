@@ -4,7 +4,7 @@ const app = express();
 const user = [];
 
 app.get('/',(req, res) => {
-    res.send('hello world')
+    res.send('Hello World!')
 })
 
 app.listen(3000,function(){
