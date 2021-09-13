@@ -20,6 +20,11 @@ app.get('/user/:id', (req, res) =>{
     res.send({ id: 0 });
 });
 
+app.delete('user/:id', (req, res) =>{
+    users[0] ? res.status(202).send(users) : res.status(204).send();
+    users.pop();
+})
+
 app.listen(3000,function(){
     console.log("server is running");
     
